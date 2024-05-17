@@ -4,7 +4,7 @@ const requireAuth = require("../middleware/requireAuth")
 const Workout = require("../models/workoutModel")
 const { getWorkouts, getWorkOut, createWorkout, deleteWorkout, updateWorkOut } = require("../controlllers/workoutController")
 // Get all the workouts
-router.use(requireAuth)
+// router.use(requireAuth)
 router.get('/', getWorkouts)
 //Get a Single Workout
 router.get("/:id", getWorkOut)
