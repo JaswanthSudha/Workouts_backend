@@ -5,6 +5,8 @@ const workouts = require("./routes/workout")
 const userRoutes = require("./routes/userRoute")
 
 const app = express()
+const cors = require("cors")
+app.use(cors())
 //connect to db
 //this is an asynchronous funciton so it takes time to complete so we use then which will execute a function after the connections is connected
 mongoose.connect(process.env.STRING)
