@@ -9,7 +9,7 @@ router.get('/', requireAuth, getWorkouts)
 //Get a Single Workout
 router.get("/:id", requireAuth, getWorkOut)
 //Post a new Workout
-router.post("/", requireAuth, requireAuthcreateWorkout)
+router.post("/", requireAuth, createWorkout)
 //Delete new Workout
 router.delete("/:id", deleteWorkout)
 //Update a new Workout
